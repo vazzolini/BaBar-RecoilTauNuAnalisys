@@ -1,0 +1,20 @@
+
+      $Id: README,v 1.2 2002/11/26 20:52:40 fabozzi Exp $
+
+HOW THE CREATE AND RUN anaRecoil.exe
+------------------------------------
+
+--> login su noric
+
+source rootsettings.csh
+gmake -f Makefile
+anaRecoil.exe -MC -d 8 -D [output dir] -c [nomechain] (oppure -f [nome rootfile])
+
+
+--> l'opzione -MC solo se si gira su MC
+
+--> per scrivere nella dir di produz.: -D /nfs/farm/babar/AWG10/LeptBc/BtauNuSemiExcl/production
+
+-->Per il cleanup:
+   gmake clean -f Makefile
+
